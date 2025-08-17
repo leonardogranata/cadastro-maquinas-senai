@@ -1,0 +1,36 @@
+
+---
+
+## 📄 .gitignore
+
+```gitignore
+# Ambiente virtual
+venv/
+env/
+
+# Configurações sensíveis
+*.env
+*.env.*
+
+# Banco de dados local
+db.sqlite3
+*.sqlite3
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+
+
+# IDEs/editofs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

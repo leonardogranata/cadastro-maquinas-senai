@@ -1,0 +1,13 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<form method="POST" action="{% url 'cadastrarColaborador' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit"></input>
+</form>
+
+{% endblock %}

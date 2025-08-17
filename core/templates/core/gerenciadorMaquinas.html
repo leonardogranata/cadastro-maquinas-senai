@@ -1,0 +1,20 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<h1>Máquinas cadastradas</h1>
+
+{% for maquina in maquinas  %}
+    <div class="bloco">
+
+        <h2>Nome Máquina: <span>{{ maquina.nomeMaquina }}</span></h2>
+        <h3>Número de Patrimônio: <span>{{ maquina.numPatrimonio }}</span></h3>
+        <h3>Modelo: <span>{{ maquina.modelo }}</span></h3>
+        <h3>Setor: <span>{{ maquina.setor }}</span></h3>
+        <h3>Colaborador: <span>{{ maquina.colaborador }}</span></h3>
+
+        <a href="{% url 'editarMaquina' maquina.id %}">Editar</a>
+        <a href="{% url 'excluirMaquina' maquina.id %}">Excluir</a>
+    </div>
+{% endfor %}
+
+{% endblock %}
