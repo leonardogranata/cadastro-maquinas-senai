@@ -1,4 +1,4 @@
-# 🖥️ Simulado 02 — Cadastro de Máquinas (SENAI)
+# 🖥️ Cadastro de Máquinas (SENAI)
 
 **Curso:** Desenvolvimento de Sistemas — SENAI  
 **Tecnologias:** Python, Django, SQLite
@@ -60,36 +60,25 @@ O objetivo é informatizar o cadastro de **colaboradores** e o gerenciamento das
 ```bash
 git clone https://github.com/leonardogranata/cadastro-maquinas-senai.git
 cd cadastro-maquinas-senai
-
+```
 ### 2️⃣ Criar ambiente virtual
 ```bash
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
-
+```
 ### 3️⃣ Instalar dependências
 ```bash
 pip install -r requirements.txt
-
+```
 ### 4️⃣ Criar banco e aplicar migrações
 ```bash
 python manage.py migrate
-
+```
 ### 5️⃣ Rodar servidor
 ```bash
 python manage.py runserver
 Acesse em http://127.0.0.1:8000/ no navegador.
-
----
-## 📂 Estrutura do Projeto
-cadastro-maquinas-senai/
-├── colaboradores/   # App para colaboradores
-├── maquinas/        # App para máquinas
-├── core/            # Configurações principais do Django
-├── templates/       # Templates HTML
-├── static/          # Arquivos estáticos (CSS/JS)
-├── db.sqlite3       # Banco local
-└── manage.py
-
+```
 ---
 📚 Projeto acadêmico desenvolvido como simulado avaliativo no SENAI.
